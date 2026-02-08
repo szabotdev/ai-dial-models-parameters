@@ -14,6 +14,10 @@ run(
     # TODO:
     #  1. Provide `deployment_name` with model from the list above👆
     #  2. Use `n` parameter with value in range from 1 to 5!
+    deployment_name='gpt-4o',
+    n=5,
+    print_request=True,
+    print_only_content=False,
 )
 
 # Pay attention to the number of choices in the response!

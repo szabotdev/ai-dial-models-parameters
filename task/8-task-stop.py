@@ -5,11 +5,13 @@ from task.app.main import run
 #  `stop` (str or list[str]): Tells the AI to stop generating text when it encounters specific words or phrases.
 #  Like setting custom "end of response" triggers.
 #       Default: None
-#  User massage: Explain the key components of a Large Language Model architecture
+#  User message: Explain the key components of a Large Language Model architecture
 
 run(
     deployment_name='gpt-4o',
     print_only_content=True,
+    print_request=True,
+    stop="**Positional Encoding**",
     # TODO:
     #  1. Use `stop` parameter with value "\n\n"
     #  2. Use `stop` parameter with values ["**Embedding Layer**", "**Transformer Blocks**", "**Training**"]

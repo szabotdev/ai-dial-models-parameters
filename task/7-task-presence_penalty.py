@@ -6,11 +6,13 @@ from task.app.main import run
 #  likelihood to talk about new topics. Higher values == more topic diversity.
 #       Range: -2.0 to 2.0
 #       Default: 0.0
-#  User massage: What is an entropy in LLM's responses?
+#  User message: What is an entropy in LLM's responses?
 
 run(
     deployment_name='gpt-4o',
     print_only_content=True,
+    print_request=True,
+    presence_penalty=-2.0,
     # TODO:
     #  Use `presence_penalty` parameter with different range (-2.0 to 2.0)
 )

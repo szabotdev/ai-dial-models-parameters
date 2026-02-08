@@ -6,11 +6,13 @@ from task.app.main import run
 #  likelihood to repeat the same line verbatim. Higher values == less repetitive text.
 #       Range: -2.0 to 2.0
 #       Default: 0.0
-#  User massage: Explain the water cycle in simple terms for children
+#  User message: Explain the water cycle in simple terms for children
 
 run(
     deployment_name='gpt-4o',
     print_only_content=True,
+    print_request=True,
+    frequency_penalty=-0.5,
     # TODO:
     #  Use `frequency_penalty` parameter with different range (-2.0 to 2.0).
 )
